@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
+        "/analyze": "http://localhost:3000",
       "/download": "http://localhost:3000"
     }
   }
